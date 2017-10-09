@@ -1,5 +1,5 @@
 {
-  "name": "calendar.ts",
+  "name": "calendar-ts",
   "main": "./lib/calendar.ts",
   "description": "A Calendar generator written in TypeScript",
   "version": "0.2.0",

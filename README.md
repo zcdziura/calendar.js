@@ -1,6 +1,6 @@
-# calendar.ts
+# calendar-ts
 
-Functions inspired by the calendar module from the Python standard library. A port of the
+Functions inspired by the calendar module from the Python standard library. A port of
 [calendar.js](https://github.com/ramalho/calendar.js) to TypeScript.
 
 ## Usage
