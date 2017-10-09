@@ -1,15 +1,16 @@
-calendar.js
-============
+# calendar.ts
 
-Functions inspired by the calendar module from the Python standard library.
+Functions inspired by the calendar module from the Python standard library. A port of the
+[calendar.js](https://github.com/ramalho/calendar.js) to TypeScript.
 
-The `monthDates` function builds an array of weeks to display one month,
-starting on Sunday (default) or Monday. Each week is an array of seven Date
-instances, including dates from the month before or after, as needed to fill
-the first and last weeks.
+## Usage
 
-Optional formatting functions may be passed as third and fourth arguments:
-one to format each date, the other to format each week.
+The `monthDates` function builds an array of weeks to display one month, starting on Sunday
+(default) or Monday. Each week is an array of seven Date instances, including dates from the month
+before or after, as needed to fill the first and last weeks.
+
+Optional formatting functions may be passed as third and fourth arguments: one to format each date,
+the other to format each week.
 
     > cal = new c.Calendar();               // weeks start on Sunday by default
     > m = cal.monthDates(2012,0,            // January is 0 in JS Date
@@ -23,9 +24,8 @@ one to format each date, the other to format each week.
     22 | 23 | 24 | 25 | 26 | 27 | 28
     29 | 30 | 31 |  1 |  2 |  3 |  4
 
-The `monthDays` function calls `monthDates` passing a simple function which
-returns the day number from a date, or zero if the date does not belong to the
-month.
+The `monthDays` function calls `monthDates` passing a simple function which returns the day number
+from a date, or zero if the date does not belong to the month.
 
     > cal = new Calendar(1);               // weeks starting on Monday
     > m = cal.monthDays(2012, 1);
